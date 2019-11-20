@@ -3,14 +3,17 @@
 
 <head>
     <link href="indexcss.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="Greetings.js"></script>
+    <link href="Greetings.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
     <!-- The Header containing image and text dialogue -->
     <div id="messageHeader">
-        <img src="logo.png">
+        <a href="index.html"><img src="logo.png"></a>
     </div>
     <!-- nav bar menu -->
     <div id="navBarro">
@@ -22,12 +25,13 @@
     </div>
     <!-- middleDiv SCREEn -->
     <div id="middleScreen">
-
+        <img src="startframe.png" id="screenImage">
+        <button id="start"><b>Start</b></button>
     </div>
     <!-- Back and Next -->
     <div id="botoes">
-        <button>Back</button>
-        <button>Next</button>
+        <button class="losBeckNecks" id="beck">Back</button>
+        <button class="losBeckNecks" id="necks">Next</button>
     </div>
 
 

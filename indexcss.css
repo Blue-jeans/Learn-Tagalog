@@ -47,10 +47,18 @@ ul {
       background-color: rgb(61, 61, 61);
       border-style: 10px solid;
       border-color:  black;
+      display: flex;
+  align-items: center;
+  justify-content: center;
   }
   #botoes{
     text-align: center;
     margin: 0 auto;
     padding-top: 15px;
     
+  }
+  .losBeckNecks{
+    height: 40px;
+   width: 90px;
+   background-color: rgb(153, 57, 153);
   }

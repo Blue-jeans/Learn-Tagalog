@@ -1,50 +1,37 @@
-var slide = $("#middleScreen");
-var wordTimerCounter = 10;
+$(document).ready(function () {
+    $("#start").click(function () {
+        $("#screenImage").attr('src', 'greetingsquestionsset/questionOne.png');
+        $("#start").remove();
 
-var greetingsQuestions = [{
-    question: "How do you say, 'How are you?' as a greeting in Tagalog?",
-    answer: "Kumusta?"
-}, {
-    question: "'Kumusta' comes from the Spanish 'Como estas?",
-    answer: "That comes from the fact that the Philipines used to be a Spanish Colony."
-}, {
-    question: "How do you say, 'How are you?' in a way that actually is asking how the other person is?",
-    answer: "Kumusta ka?"
-}, {
-    question: "The addition of the word 'ka' which means 'you', personalizes the question and makes it a sincere inquiery as to how they are.",
-    answer: ""
-}, {
-    question: "How do you say 'How have you been' in Tagalog?",
-    answer: "Kumusta ka na?"
-}, {
-    question: "How do you ask a person earnestly how they are in Tagalog?",
-    answer: "Kumusta ka?"
-}, {
-    question: "How do you ask a person how they've been in Tagalog?",
-    answer: "Kumusta ka na" ?
-}, {
-    question: "What is your name?",
-    answer: "Anong ang pangaalan mo?"
-}, {
-    question: "What are you doing?",
-    answer: "Anong ginagawa mo?"
-}, {
-    question: "Now, how do you ask 'What is your name?' in Tagalog? ",
-    answer: "Anong ang pangaalan mo?"
-}, {
-    question: "How do you say 'What are you doing?' in Tagalog?",
-    answer: "Anong ginagawa mo?"
-}],
+    });
 
-var timer;
 
-var game = {
-    questions: greetingsQuestions,
-    currentQuestion: 0,
-    counter: wordTimerCounter,
+});
 
-    counterdown: function () {
-        this.counter--;
+var images = [];
 
+images[0] = 'greetingsquestionsset/questionTwo.png';
+images[1] = 'greetingsquestionsset/questionThree.png';
+images[2] = 'greetingsquestionsset/questionFour.png';
+images[3] = 'greetingsquestionsset/questionFive.png';
+images[4] = 'greetingsquestionsset/questionSix.png';
+images[5] = 'greetingsquestionsset/questionSeven.png';
+images[6] = 'greetingsquestionsset/questionEight.png';
+images[7] = 'greetingsquestionsset/questionNine.png';
+images[8] = 'greetingsquestionsset/questionTen.png';
+images[9] = 'greetingsquestionsset/questionEleven.png';
+
+function changeImage() {
+    document.screenImage.src = image[i];
+
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
     }
+
+}
+
+becks.onclick = function () {
+    changeImage();
 }

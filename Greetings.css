@@ -1,0 +1,12 @@
+#start{
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+   height: 40px;
+   width: 90px;
+   background-color: rgb(153, 57, 153);
+}
+#middleScreen img{
+width: 100%;
+height: auto;
+}
