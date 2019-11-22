@@ -25,26 +25,27 @@ $(document).ready(function () {
     images[8] = 'greetingsquestionsset/questionTen.png';
     images[9] = 'greetingsquestionsset/questionEleven.png';
 
-    var i;
+    var i = 0;
     function changeImage() {
-        $('#screenImage').attr('src', images[i]);
+
 
         if (i < images.length - 1) {
             i++;
         } else {
             i = 0;
         }
-
+        $('#screenImage').attr('src', images[i]);
     }
 
     function backImage() {
-        $("#screenImage").attr('src', images[i]);
-        if (i < images.length - 1) {
+
+        if (i > 0) {
             i--;
         } else {
             i = 0;
         }
         console.log(images[i]);
+        $("#screenImage").attr('src', images[i]);
     }
 });
 
