@@ -24,6 +24,8 @@ $(document).ready(function () {
     images[7] = 'greetingsquestionsset/preguntaOcho.png';
     images[8] = 'greetingsquestionsset/preguntaNueve.png';
     images[9] = 'greetingsquestionsset/preguntaDiez.png';
+    images[10] = 'greetingsquestionsset/preguntaOnce.png';
+    images[11] = 'greetingsquestionsset/preguntaDoce.png';
 
     var i = 0;
     function changeImage() {
