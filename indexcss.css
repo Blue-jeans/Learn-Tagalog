@@ -10,7 +10,7 @@ ul {
     color:#363535;
   
     text-decoration: none;
-    position: relative;
+    
     display: block;
     text-align: center;
   }
@@ -65,4 +65,31 @@ ul {
   #workInProgressImage{
     height:500px;
     width: 750px;
+  }
+
+
+  #recursos{
+    background-color: rgb(138, 138, 245);
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  
+{
+    #lessonImage{
+      width: 300px;
+      height: 300px;
+    }
+    .description{
+      font-size: 35px;
+      color: white;
+    }
+    li{
+      font-size: 40px;
+    }
+   
   }
